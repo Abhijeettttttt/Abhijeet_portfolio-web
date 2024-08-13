@@ -164,6 +164,28 @@ section .title::after{
 
 
 /* home section styling */
+.social-icons{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    font-size:30px;
+    gap: 140px;
+    padding-left: 20px;
+    padding-top: 49px;
+    width: 90px; 
+    border: 6px solid transparent;
+
+}
+.social-icons .fa-brands{
+    transition: 0.1s;
+}
+.social-icons .fa-brands:hover{
+    background: linear-gradient(#b2b636,#ad3156);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-size: 32px; 
+}
 .home{
     display: flex;
     background: url("bg.jpg") no-repeat center;
@@ -368,10 +390,10 @@ section .title::after{
     width: 90%;
 }
 .skills-content .right .css::before{
-    width: 60%;
+    width: 80%;
 }
 .skills-content .right .js::before{
-    width: 80%;
+    width: 70%;
 }
 .skills-content .right .php::before{
     width: 50%;
