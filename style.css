@@ -165,7 +165,6 @@ section .title::after{
 
 /* home section styling */
 .social-icons{
-    color:white;
     display: flex;
     flex-direction: column;
     font-size:30px;
@@ -174,18 +173,29 @@ section .title::after{
     padding-top: 49px;
     width: 90px; 
     border: 6px solid transparent;
+    position: relative;
 
 }
 .social-icons .fa-brands{
     transition: 0.1s;
 }
 .social-icons .fa-brands:hover{
-    background: linear-gradient(#b2b636,#ad3156);
+    background: linear-gradient(red,rgb(235, 235, 237));
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
     font-size: 32px; 
+    
 }
+.social-icons::before{
+    content: "";
+    position: absolute;
+}
+.social-icons::after{
+    
+    position: absolute;
+}
+
 .home{
     display: flex;
     background: url("bg.jpg") no-repeat center;
