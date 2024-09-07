@@ -128,6 +128,7 @@ section .title::after{
 }
 
 /* menu btn styling */
+
 .menu-btn{
     color: #fff;
     font-size: 23px;
@@ -164,7 +165,14 @@ section .title::after{
 
 
 /* home section styling */
-.social-icons{
+.neumorphism {
+    border-radius: 61px;
+    background: #ffffff;
+    box-shadow: 27px 27px 54px rgb(196, 137, 137), -27px -27px 54px rgb(229, 228, 228);
+    padding: 30px;
+}
+    
+    .social-icons{
     display: flex;
     flex-direction: column;
     font-size:30px;
@@ -257,11 +265,13 @@ section .title::after{
 }
 
 /* about section styling */
+
 .about .title::after{
     content: "who i am";
 }
 .about .about-content .left{
     width: 45%;
+    border-radius: 61px;
 }
 .about .about-content .left img{
     height: 450px;
